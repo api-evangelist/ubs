@@ -138,6 +138,10 @@ apis:
       product-data services beyond the dedicated mortgage, QR, PSD2, TWINT,
       bLink, and Partner/KeyPort ecosystems.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/UBS-AG
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/ubs
   - type: Website
     url: https://www.ubs.com/
   - type: Portal
