@@ -2,7 +2,7 @@ aid: ubs
 url: https://raw.githubusercontent.com/api-evangelist/ubs/refs/heads/main/apis.yml
 name: UBS
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Financial
   - Banks
@@ -22,7 +22,7 @@ apis:
       - Payments
       - Account Information
       - EU Regulation
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.ubs.com/
     properties:
       - url: https://developer.ubs.com/
@@ -42,7 +42,7 @@ apis:
       - Lending
       - Real Estate
       - Switzerland
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.ubs.com/
     properties:
       - url: https://developer.ubs.com/
@@ -60,7 +60,7 @@ apis:
       - Payments
       - Invoicing
       - Switzerland
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.ubs.com/
     properties:
       - url: https://developer.ubs.com/
@@ -76,7 +76,7 @@ apis:
       - Mobile Payments
       - TWINT
       - Switzerland
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.ubs.com/
     properties:
       - url: https://developer.ubs.com/
@@ -93,7 +93,7 @@ apis:
       - Payments
       - Cash Management
       - Switzerland
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.ubs.com/
     properties:
       - url: https://developer.ubs.com/
@@ -110,7 +110,7 @@ apis:
       - Wealth Management
       - Custody
       - Banking as a Service
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.ubs.com/
     properties:
       - url: https://developer.ubs.com/
@@ -127,7 +127,7 @@ apis:
       - Accounts
       - Payments
       - Finance
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.ubs.com/
     properties:
       - url: https://developer.ubs.com/
