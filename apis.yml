@@ -23,7 +23,7 @@ tags:
 description: 'A Swiss multinational investment bank and financial services company and the world''s largest wealth manager. UBS exposes a multi-ecosystem developer platform at developer.ubs.com covering retail banking, mortgages, QR billing, EU PSD2 open banking, Swiss TWINT payments, corporate bLink connectivity, and the enterprise UBS Partner / KeyPort offering.'
 created: '2026-05-05'
 modified: '2026-05-16'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: ubs:psd2
     name: UBS PSD2 API
