@@ -51,6 +51,11 @@ apis:
     tags:
       - Mortgages
       - Lending
+      - Real-Estate
+      - Switzerland
+    tags_raw:
+      - Mortgages
+      - Lending
       - Real Estate
       - Switzerland
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
@@ -134,6 +139,11 @@ apis:
   - aid: ubs:banking-ecosystem
     name: UBS Banking Ecosystem API
     tags:
+      - Banking
+      - Account
+      - Payments
+      - Finance
+    tags_raw:
       - Banking
       - Accounts
       - Payments
