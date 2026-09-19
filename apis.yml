@@ -60,7 +60,7 @@ apis:
   - aid: ubs:key4-mortgages
     name: UBS key4 Mortgages API
     tags:
-      - Mortgages
+      - Mortgage
       - Lending
       - Real-Estate
       - Switzerland
