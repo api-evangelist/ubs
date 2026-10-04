@@ -26,6 +26,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ubs.png
 tags:
+  - Finance
+  - Banks
+  - Wealth Management
+  - Investment Banking
+  - Open Banking
+tags_raw:
   - Financial
   - Banks
   - Wealth Management
@@ -62,13 +68,14 @@ apis:
     tags:
       - Mortgage
       - Lending
-      - Real-Estate
+      - Real Estate
       - Switzerland
     tags_raw:
       - Mortgages
       - Lending
       - Real Estate
       - Switzerland
+      - Real-Estate
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.ubs.com/
     properties:
