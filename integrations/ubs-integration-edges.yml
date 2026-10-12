@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/ubs/integrations
+- https://n8n.io/integrations/ubs/
+- https://composio.dev/toolkits/ubs
+- https://monid.ai/tools/ubs
+checked:
+- https://composio.dev/toolkits/ubs
+- https://monid.ai/tools/ubs
+- https://n8n.io/integrations/ubs/
+- https://zapier.com/apps/ubs/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
