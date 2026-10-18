@@ -111,3 +111,41 @@
     detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
+- slug: ubs-sec-investment-adviser-registration
+  label: SEC (investment adviser registration)
+  partner_name: SEC (investment adviser registration)
+  category: Investment adviser
+  type: contract
+  channel: regulator-register
+  evidence: https://adviserinfo.sec.gov/firm/summary/106838
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: SEC Investment Adviser Public Disclosure (IAPD compilation feed, Form ADV Part 1A)
+    spec_file: null
+    standard: Investment Advisers Act of 1940 (SEC Form ADV)
+    role: sec-registered-investment-adviser
+    registered_name: UBS ASSET MANAGEMENT (AMERICAS) LLC
+    business_name: null
+    register_id: CRD 106838
+    sec_file_number: 801-34910
+    registration_status: APPROVED
+    registered_since: '1989-09-11'
+    main_office: NEW YORK, NY, United States
+    matched_domain: ubs.com
+    matched_by: domain+name-among-holders
+    identity_source: registrant's own Form ADV Item 1.I website address (no lookup)
+    custody_of_client_assets: false
+    signal_note: 'participation only: SEC registration is not a certification; firm type, custody and office are
+      context, never counted; regulatory AUM is not recorded (breadth is not credit)'
+    detected_by: sweep-asset-management.py
+    detected: '2026-10-18'
+    other_registrations:
+    - UBS FARMLAND INVESTORS LLC (CRD 107754)
+    - UBS REALTY INVESTORS LLC (CRD 107758)
+    - UBS ASSET MANAGEMENT CREDIT INVESTMENTS GROUP (UK) LTD (CRD 113463)
+    - UBS TRUST COMPANY OF PUERTO RICO (CRD 313696)
+    - UBS FINANCIAL SERVICES INC. (CRD 8174)
+    - UBS ASSET MANAGEMENT FUNDS LTD (CRD 173081)
+  status: not-a-workflow
+  arazzo: null
