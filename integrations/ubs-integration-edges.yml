@@ -25,6 +25,10 @@ checked:
 - https://vpr.hkma.gov.hk/eng/regulatory-resources/registers/register-of-ais-and-lros/
 - https://www.hkma.gov.hk/eng/regulatory-resources/registers/register-of-svf-licensees/
 - https://www.sfc.hk/en/Regulatory-functions/Intermediaries/Licensing/Register-of-licensed-persons-and-registered-institutions
+- https://dadosabertos.bcb.gov.br/api/3/action/package_show?id=relacao-de-instituicoes-em-funcionamento-no-pais
+- https://olinda.bcb.gov.br/olinda/servico/BcBase/versao/v2/odata/
+- https://olinda.bcb.gov.br/olinda/servico/Informes_ListaTarifasPorInstituicaoFinanceira/versao/v1/odata/
+- https://olinda.bcb.gov.br/olinda/servico/Instituicoes_em_funcionamento/versao/v1/odata/
 summary: null
 marketplace_apps: []
 edges:
@@ -298,5 +302,114 @@ edges:
     detected_by: sweep-hong-kong-sfc-licensed.py
     detected: '2026-10-22'
   detected_by: sweep-hong-kong-sfc-licensed.py
+  first_seen: '2026-10-22'
+- partner_name: Banco Central do Brasil authorized banks
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+  category: Brazil BCB-authorized bank
+  contract_reference:
+    register: Banco Central do Brasil authorized banks
+    spec_file: null
+    standard: null
+    role: authorized-bank
+    institution_class: incumbent
+    registrations:
+    - registered_name: BANCO UBS (BRASIL) S.A.
+      register_status: authorized-active
+      register_country: BR
+      register_id: CNPJ 32062580
+      segment: Banco Múltiplo
+      matched_domain: ubs.com
+      matched_by: domain+name-among-holders
+      evidence_url: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+      licences:
+      - Banco Múltiplo
+      situation: Autorizada em Atividade
+      tariff_list_confirmed: true
+      domain_source: filed-website
+    - registered_name: UBS BB BANCO DE INVESTIMENTO S.A.
+      register_status: authorized-active
+      register_country: BR
+      register_id: CNPJ 18520834
+      segment: Banco de Investimento
+      matched_domain: ubs.com
+      matched_by: domain+name-among-holders
+      evidence_url: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+      licences:
+      - Banco de Investimento
+      situation: Autorizada em Atividade
+      tariff_list_confirmed: true
+      domain_source: filed-website
+    - registered_name: BANCO DE INVESTIMENTOS UBS (BRASIL) S.A.
+      register_status: authorized-active
+      register_country: BR
+      register_id: CNPJ 33987793
+      segment: Banco de Investimento
+      matched_domain: ubs.com
+      matched_by: domain+name-among-holders
+      evidence_url: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+      licences:
+      - Banco de Investimento
+      situation: Autorizada em Atividade
+      tariff_list_confirmed: true
+      domain_source: filed-website
+    signal_note: 'participation only: a Banco Central do Brasil authorisation to operate; no API conformance is
+      published by this register'
+    detected_by: sweep-brazil-bcb-authorized-institutions.py
+    detected: '2026-10-22'
+  detected_by: sweep-brazil-bcb-authorized-institutions.py
+  first_seen: '2026-10-22'
+- partner_name: Banco Central do Brasil authorized financial companies (sociedades)
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+  category: Brazil BCB-authorized financial company (CFI / DTVM / CTVM / FX broker / other)
+  contract_reference:
+    register: Banco Central do Brasil authorized financial companies (sociedades)
+    spec_file: null
+    standard: null
+    role: authorized-financial-company
+    institution_class: incumbent
+    registrations:
+    - registered_name: UBS (BRASIL) CORRETORA DE VALORES S.A.
+      register_status: authorized-active
+      register_country: BR
+      register_id: CNPJ 61809182
+      segment: Sociedade Corretora de TVM
+      matched_domain: ubs.com
+      matched_by: domain+name-among-holders
+      evidence_url: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+      licences:
+      - Sociedade Corretora de TVM
+      situation: Autorizada em Atividade
+      tariff_list_confirmed: true
+      domain_source: filed-website
+    - registered_name: UBS BB CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A.
+      register_status: authorized-active
+      register_country: BR
+      register_id: CNPJ 02819125
+      segment: Sociedade Corretora de TVM
+      matched_domain: ubs.com
+      matched_by: domain+name-among-holders
+      evidence_url: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+      licences:
+      - Sociedade Corretora de TVM
+      situation: Autorizada em Atividade
+      tariff_list_confirmed: true
+      domain_source: filed-website
+    signal_note: 'participation only: a Banco Central do Brasil authorisation to operate; no API conformance is
+      published by this register'
+    detected_by: sweep-brazil-bcb-authorized-institutions.py
+    detected: '2026-10-22'
+  detected_by: sweep-brazil-bcb-authorized-institutions.py
   first_seen: '2026-10-22'
 templates: []
