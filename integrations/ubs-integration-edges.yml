@@ -11,15 +11,57 @@ checked:
 - https://monid.ai/tools/ubs
 - https://n8n.io/integrations/ubs/
 - https://reports.adviserinfo.sec.gov/reports/CompilationReports/IA_FIRM_SEC_Feed_10_17_2026.xml.gz
+- https://reports.adviserinfo.sec.gov/reports/CompilationReports/IA_FIRM_SEC_Feed_10_19_2026.xml.gz
 - https://www.bi.go.id/id/layanan/informasi-perizinan/sistem-pembayaran/default.aspx
 - https://www.bnm.gov.my/list-of-regulatees
 - https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
 - https://www.ojk.go.id/id/kanal/iknb/data-dan-statistik/direktori/fintech/Default.aspx
 - https://www.wealthbox.com/wp-json/wp/v2/integrations?per_page=100&page=1
 - https://zapier.com/apps/ubs/integrations
+- https://portal.mvp.bafin.de/database/InstInfo/
+- https://www.dnb.nl/en/public-register/
+- https://www.finma.ch/en/finma-public/authorised-institutions-individuals-and-products/
 summary: null
 marketplace_apps: []
 edges:
+- partner_name: SEC (investment adviser registration)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://adviserinfo.sec.gov/firm/summary/106838
+  category: Investment adviser
+  contract_reference:
+    register: SEC Investment Adviser Public Disclosure (IAPD compilation feed, Form ADV Part 1A)
+    spec_file: null
+    standard: Investment Advisers Act of 1940 (SEC Form ADV)
+    role: sec-registered-investment-adviser
+    registered_name: UBS ASSET MANAGEMENT (AMERICAS) LLC
+    business_name: null
+    register_id: CRD 106838
+    sec_file_number: 801-34910
+    registration_status: APPROVED
+    registered_since: '1989-09-11'
+    main_office: NEW YORK, NY, United States
+    matched_domain: ubs.com
+    matched_by: domain+name-among-holders
+    identity_source: registrant's own Form ADV Item 1.I website address (no lookup)
+    custody_of_client_assets: false
+    signal_note: 'participation only: SEC registration is not a certification; firm type, custody and office are
+      context, never counted; regulatory AUM is not recorded (breadth is not credit)'
+    detected_by: sweep-asset-management.py
+    detected: '2026-10-18'
+    other_registrations:
+    - UBS FARMLAND INVESTORS LLC (CRD 107754)
+    - UBS REALTY INVESTORS LLC (CRD 107758)
+    - UBS ASSET MANAGEMENT CREDIT INVESTMENTS GROUP (UK) LTD (CRD 113463)
+    - UBS TRUST COMPANY OF PUERTO RICO (CRD 313696)
+    - UBS FINANCIAL SERVICES INC. (CRD 8174)
+    - UBS ASSET MANAGEMENT FUNDS LTD (CRD 173081)
+  detected_by: sweep-asset-management.py
+  first_seen: '2026-10-18'
 - partner_name: ISO 10383 (MIC)
   partner: null
   type: register
@@ -125,47 +167,9 @@ edges:
       legal_name: UBS SECURITIES LLC
       country: US
     detected_by: sweep-capital-markets.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-capital-markets.py
-  first_seen: '2026-10-15'
-- partner_name: SEC (investment adviser registration)
-  partner: null
-  partner_match: register
-  type: contract
-  channel: regulator-register
-  relationship: standard-participant
-  direction: partner-built
-  evidence: https://adviserinfo.sec.gov/firm/summary/106838
-  category: Investment adviser
-  contract_reference:
-    register: SEC Investment Adviser Public Disclosure (IAPD compilation feed, Form ADV Part 1A)
-    spec_file: null
-    standard: Investment Advisers Act of 1940 (SEC Form ADV)
-    role: sec-registered-investment-adviser
-    registered_name: UBS ASSET MANAGEMENT (AMERICAS) LLC
-    business_name: null
-    register_id: CRD 106838
-    sec_file_number: 801-34910
-    registration_status: APPROVED
-    registered_since: '1989-09-11'
-    main_office: NEW YORK, NY, United States
-    matched_domain: ubs.com
-    matched_by: domain+name-among-holders
-    identity_source: registrant's own Form ADV Item 1.I website address (no lookup)
-    custody_of_client_assets: false
-    signal_note: 'participation only: SEC registration is not a certification; firm type, custody and office are
-      context, never counted; regulatory AUM is not recorded (breadth is not credit)'
-    detected_by: sweep-asset-management.py
-    detected: '2026-10-18'
-    other_registrations:
-    - UBS FARMLAND INVESTORS LLC (CRD 107754)
-    - UBS REALTY INVESTORS LLC (CRD 107758)
-    - UBS ASSET MANAGEMENT CREDIT INVESTMENTS GROUP (UK) LTD (CRD 113463)
-    - UBS TRUST COMPANY OF PUERTO RICO (CRD 313696)
-    - UBS FINANCIAL SERVICES INC. (CRD 8174)
-    - UBS ASSET MANAGEMENT FUNDS LTD (CRD 173081)
-  detected_by: sweep-asset-management.py
-  first_seen: '2026-10-18'
+  first_seen: '2026-10-19'
 - partner_name: MAS Financial Institutions Directory
   partner: null
   partner_match: register
@@ -193,4 +197,41 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-gulf-asean-open-finance.py
   first_seen: '2026-10-18'
+- partner_name: FINMA authorised institutions (Switzerland)
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.finma.ch/en/finma-public/authorised-institutions-individuals-and-products/
+  category: Swiss financial supervisory licence (FINMA)
+  contract_reference:
+    register: FINMA authorised institutions (Switzerland)
+    spec_file: null
+    standard: null
+    role: licensed-participant
+    registrations:
+    - registered_name: UBS AG
+      licences:
+      - bank
+      register_country: CH
+      matched_domain: ubs.com
+      matched_by: domain+name-among-holders
+      identity: wikidata Q193199 'UBS' P856 https://www.ubs.com/
+    - registered_name: UBS Switzerland AG
+      licences:
+      - bank
+      register_country: CH
+      matched_domain: null
+      matched_by: register-name
+      register_name_note: register-name 'ubs' = ubs; wikidata P856 banisaleh.ac.id, ubs.com, univ-ubs.fr agrees
+        or unheld
+    signal_note: 'participation only: a supervisory licence / authorisation; no API conformance is published by
+      this register'
+    detected_by: sweep-dach-financial-registers.py
+    detected: '2026-10-21'
+    identity_source: wikidata P856 (LEI P1278 or name; labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-dach-financial-registers.py
+  first_seen: '2026-10-21'
 templates: []
